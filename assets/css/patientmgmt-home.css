@@ -1,27 +1,26 @@
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
-header{
-    text-align: center;
-    border: 5px solid black;
-    height: 100px;
-
+header {
+	text-align: center;
+	border: 5px solid black;
+	height: 100px;
 }
 
-nav{
-    vertical-align: center;
-    padding-top: 25px;  /*find better way to center line*/
+nav {
+	vertical-align: center;
+	padding-top: 25px; /*find better way to center line*/
 }
 
-ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 10px;
+ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 10px;
 }
 
-a{
-    color: black;
+a {
+	color: black;
 }
 
 /* ------------------------------------------------------- top area* -------------------------------------------------------*/
@@ -29,61 +28,61 @@ a{
 /*    height: 300px;*/
 /*}*/
 
-.admininfo{
-    width: 20%;
-    border: 5px solid black;
-    float: left;
-    height: 200px;
+.admininfo {
+	width: 20%;
+	border: 5px solid black;
+	float: left;
+	height: 200px;
 }
 
-.admininfo span{
-    display: block;
+.admininfo span {
+	display: block;
 }
 
-.timeline img{
-    height: 200px;
-    width: 60%;
-    border: 5px solid black;
-    float: left;
+.timeline img {
+	height: 200px;
+	width: 60%;
+	border: 5px solid black;
+	float: left;
 }
 
-.profile{
-    border: 5px solid black;
-    width: 20%;
-    height: 200px;
-    float: left;
+.profile {
+	border: 5px solid black;
+	width: 20%;
+	height: 200px;
+	float: left;
 }
 
 /* ------------------------------------------------------- bottom area* -------------------------------------------------------*/
-.bottomarea h2{
-    text-align: center;
+.bottomarea h2 {
+	text-align: center;
 }
 
-.symptomtracker{
-    width: 20%;
-    border: 5px solid black;
-    float: left;
-    height: 400px;
+.symptomtracker {
+	width: 20%;
+	border: 5px solid black;
+	float: left;
+	height: 400px;
 }
 
-.bottomarea .symptomtracker span{
-    display: block;
+.bottomarea .symptomtracker span {
+	display: block;
 }
 
-.bottomarea .weekoutlook span{
-    display: block;
+.bottomarea .weekoutlook span {
+	display: block;
 }
 
-.weekoutlook{
-    width: 60%;
-    border: 5px solid black;
-    float: left;
-    height: 400px;
+.weekoutlook {
+	width: 60%;
+	border: 5px solid black;
+	float: left;
+	height: 400px;
 }
 
-.yourmedicalteam{
-    width: 20%;
-    border: 6px solid black;
-    float: left;
-    height: 400px;
+.yourmedicalteam {
+	width: 20%;
+	border: 6px solid black;
+	float: left;
+	height: 400px;
 }
