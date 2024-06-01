@@ -1,89 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Patient Management</title>
-    <link rel="stylesheet" href="patientmgmt-home.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Patient Management</title>
+		<link rel="stylesheet" href="patientmgmt-home.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Patient Profile</a></li>
+					<li><a href="#">Symptom Tracker</a></li>
+					<li><a href="#">Treatment Plan</a></li>
+				</ul>
+			</nav>
+		</header>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Patient Profile</a></li>
-            <li><a href="#">Symptom Tracker</a></li>
-            <li><a href="#">Treatment Plan</a></li>
-        </ul>
-    </nav>
-</header>
+		<section class="toparea">
+			<!--This section and spans will pull admin info from the database, currently placeholder with span tags-->
 
+			<section class="admininfo">
+				<span>First Name</span>
+				<span>Date of Birth</span>
+				<span>Medical Diagnosis</span>
+			</section>
 
+			<!--This section will pull data and place on a timeline, currently placeholder with generic timeline image-->
 
-<section class="toparea">
-<!--This section and spans will pull admin info from the database, currently placeholder with span tags-->
+			<section class="timeline">
+				<img src="generic%20timeline.jpeg" alt="Medical Timeline" />
+			</section>
 
-    <section class="admininfo">
-        <span>First Name</span>
-        <span>Date of Birth</span>
-        <span>Medical Diagnosis</span>
-    </section>
+			<!--This section will host the "profile" that is currently logged in and will populate a drop down menu of secure message portal, settings, logout, etc...-->
 
-<!--This section will pull data and place on a timeline, currently placeholder with generic timeline image-->
+			<section class="profile">
+				<span>Profile Name</span>
+			</section>
+		</section>
 
-    <section class="timeline">
-        <img src="generic%20timeline.jpeg" alt="Medical Timeline">
-    </section>
+		<!--This section covers the bottom portion of the web app-->
+		<section class="bottomarea">
+			<!--This section covers the symptom tracker data, need to brainstorm-->
+			<section class="symptomtracker">
+				<h2>Symptom Tracker</h2>
+				<span>Symptom 1</span>
+				<span>Symptom 2</span>
+				<span>Symptom 3</span>
+			</section>
 
-<!--This section will host the "profile" that is currently logged in and will populate a drop down menu of secure message portal, settings, logout, etc...-->
+			<!--This section will pull data from a database and input into a table-->
+			<section class="weekoutlook">
+				<h2>Week Outlook</h2>
+				<span>Monday</span>
+				<span>Tuesday</span>
+				<span>Wednesday</span>
+				<span>Thursday</span>
+				<span>Friday</span>
+				<span>Saturday</span>
+				<span>Sunday</span>
+			</section>
 
-    <section class="profile">
-        <span>Profile Name</span>
-    </section>
-</section>
-
-<!--This section covers the bottom portion of the web app-->
-<section class="bottomarea">
-
-<!--This section covers the symptom tracker data, need to brainstorm-->
-    <section class="symptomtracker">
-        <h2>Symptom Tracker</h2>
-        <span>Symptom 1</span>
-        <span>Symptom 2</span>
-        <span>Symptom 3</span>
-    </section>
-
-<!--This section will pull data from a database and input into a table-->
-    <section class="weekoutlook">
-        <h2>Week Outlook</h2>
-        <span>Monday</span>
-        <span>Tuesday</span>
-        <span>Wednesday</span>
-        <span>Thursday</span>
-        <span>Friday</span>
-        <span>Saturday</span>
-        <span>Sunday</span>
-    </section>
-
-<!--This section will pull data from a database and input a table-->
-    <section class="yourmedicalteam">
-        <h2>Your Medical Team</h2>
-        <section>
-            <span>Doctor 1</span>
-            <img src="#" alt="Doctor 1 Picture">
-        </section>
-        <section>
-            <span>Doctor 2</span>
-            <img src="#" alt="Doctor 2 Picture">
-        </section>
-        <section>
-            <span>Doctor 2</span>
-            <img src="#" alt="Doctor 2 Picture">
-        </section>
-
-    </section>
-
-</section>
-
-</body>
+			<!--This section will pull data from a database and input a table-->
+			<section class="yourmedicalteam">
+				<h2>Your Medical Team</h2>
+				<section>
+					<span>Doctor 1</span>
+					<img src="#" alt="Doctor 1 Picture" />
+				</section>
+				<section>
+					<span>Doctor 2</span>
+					<img src="#" alt="Doctor 2 Picture" />
+				</section>
+				<section>
+					<span>Doctor 2</span>
+					<img src="#" alt="Doctor 2 Picture" />
+				</section>
+			</section>
+		</section>
+	</body>
 </html>
