@@ -1573,7 +1573,7 @@ ul.link-list li:first-child {
 	padding: 15px 25px 15px 25px;
 	background-color: #007b9d;
 	border-radius: 10px;
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.2em;
@@ -1640,7 +1640,7 @@ ul.link-list li:first-child {
 	right: 40px;
 	top: 1px;
 	line-height: 84px;
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
 	font-size: 1.3em;
 	letter-spacing: -1px;
 }
@@ -1681,7 +1681,7 @@ ul.link-list li:first-child {
 #banner {
 	position: relative;
 	width: 100%;
-	padding: 6em 0;
+	padding: 4em 0;
 	border-radius: 10px;
 	background-image: url(images/banner.jpg);
 	background-size: cover;
@@ -1704,7 +1704,7 @@ ul.link-list li:first-child {
 	font-size: 1.6em;
 	color: #fff;
 	letter-spacing: -1px;
-	text-transform: lowercase;
+	/* text-transform: lowercase; */
 	opacity: 0.8;
 }
 
@@ -2087,4 +2087,71 @@ ul.link-list li:first-child {
 	#copyright a {
 		color: #a6a88f;
 	}
+}
+
+.containerTimeline {
+	width: 100%;
+	margin: auto;
+}
+
+.timeline {
+	counter-reset: test 0;
+	position: relative;
+}
+
+.timeline li {
+	list-style: none;
+	float: left;
+	width: 10%;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+ul:nth-child(1) {
+	color: #4caf50;
+}
+
+.timeline li:before {
+	counter-increment: test;
+	content: counter(test);
+	width: 50px;
+	height: 50px;
+	border: 3px solid #4caf50;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto 10px auto;
+	background: #fff;
+	color: #000;
+	transition: all ease-in-out 0.3s;
+	cursor: pointer;
+}
+
+.timeline li:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: grey;
+	top: 25px;
+	left: -50%;
+	z-index: -999;
+	transition: all ease-in-out 0.3s;
+}
+
+.timeline li:first-child:after {
+	content: none;
+}
+.timeline li.active-tl {
+	color: #555555;
+}
+.timeline li.active-tl:before {
+	background: #4caf50;
+	color: #f1f1f1;
+}
+
+.timeline li.active-tl + li:after {
+	background: #4caf50;
 }
